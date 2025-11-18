@@ -27,7 +27,7 @@
     </div>
   </header>
   <main>
-    <section id="contact" class="section alt">
+    <section id="contact" class="section contact-theme">
       <div class="container two-col">
         <div>
           <h1>Contact</h1>
@@ -38,7 +38,11 @@
             <li><strong>Hours</strong> Mon–Sat, 9:00–18:00</li>
           </ul>
         </div>
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/hs1012006@gmail.com" method="POST" data-mode="remote">
+          <input type="hidden" name="_subject" value="New inquiry from Abco Technical Pvt Ltd">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="contact.html?sent=1">
           <input type="text" name="name" placeholder="Name" required>
           <input type="email" name="email" placeholder="Email" required>
           <input type="text" name="company" placeholder="Company">
