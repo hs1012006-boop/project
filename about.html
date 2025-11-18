@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About • Abco Technical Pvt Ltd</title>
+  <title>Abco Technical Pvt Ltd</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  </head>
+</head>
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a href="index.html#home" class="brand">
+      <a href="#home" class="brand">
         <img src="mainlogo.png" alt="Company Logo" class="brand-logo" onerror="this.onerror=null;this.src='mainlogo.jpg'">
         <span class="brand-name">Abco Technical Pvt Ltd</span>
       </a>
@@ -26,11 +26,41 @@
       </nav>
     </div>
   </header>
+
   <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Industrial Motion, Made Reliable.</h1>
+          <p>Abco Technical Pvt Ltd supplies bearings, seals, and motion components with certified quality, smart pricing, and dependable delivery across Pakistan.</p>
+          <div class="hero-actions">
+            <a href="services.html" class="btn primary">Explore Services</a>
+            <a href="contact.html" class="btn">Get a Quote</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-value">20+</div>
+              <div class="stat-label">Years of know‑how</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">1200+</div>
+              <div class="stat-label">Customers supported</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">24/7</div>
+              <div class="stat-label">Response for urgencies</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="about" class="section">
       <div class="container two-col">
         <div>
-          <h1>About</h1>
+          <h2>About</h2>
           <p>Abco Technical Pvt Ltd is a supply partner for industrial motion and maintenance. We combine product expertise with shop‑floor insight to keep plants and projects moving.</p>
           <p>We work with vetted manufacturers and local distributors to ensure genuine parts and predictable lead times. From specification to delivery, we focus on clarity and reliability.</p>
         </div>
@@ -50,7 +80,71 @@
         </div>
       </div>
     </section>
+
+    <section id="services" class="section alt">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="card-title">Industrial Sourcing</div>
+            <div class="card-text">Bearings, housings, seals, and drive components from trusted networks.</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Application Support</div>
+            <div class="card-text">Selection assistance, equivalency matching, and reliability improvements.</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Stock Solutions</div>
+            <div class="card-text">Scheduled deliveries, buffer stock, and urgent fulfillment when it counts.</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Maintenance Guidance</div>
+            <div class="card-text">Installation tips, lubrication practices, and extended service life.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="brands" class="section">
+      <div class="container">
+        <h2>Brands</h2>
+        <p>Representative partner logos from our supplier network.</p>
+        <div class="brand-grid logos">
+          <div class="brand-logo-tile"><img src="brands/logo2 (1).jpeg" alt="Brand 1" class="brand-logo-img" onerror="this.style.display='none';this.parentElement.classList.add('placeholder')"></div>
+          <div class="brand-logo-tile"><img src="brands/logo3.jpg" alt="Brand 2" class="brand-logo-img" onerror="this.style.display='none';this.parentElement.classList.add('placeholder')"></div>
+          <div class="brand-logo-tile"><img src="brands/logo4.png" alt="Brand 3" class="brand-logo-img" onerror="this.style.display='none';this.parentElement.classList.add('placeholder')"></div>
+          <div class="brand-logo-tile"><img src="brands/logo5.jpg" alt="Brand 4" class="brand-logo-img" onerror="this.style.display='none';this.parentElement.classList.add('placeholder')"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-theme">
+      <div class="container two-col">
+        <div>
+          <h2>Contact</h2>
+          <p>Tell us about your requirements and we will respond with availability, pricing, and delivery options.</p>
+          <ul class="info">
+            <li><strong>Email</strong> hs102006@gmail.com</li>
+            <li><strong>Phone</strong> 03344344159</li>
+            <li><strong>Hours</strong> Mon–Sat, 9:00–18:00</li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/hs1012006@gmail.com" method="POST" data-mode="remote">
+          <input type="hidden" name="_subject" value="New inquiry from Abco Technical Pvt Ltd">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="contact.html?sent=1">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="company" placeholder="Company">
+          <textarea name="message" rows="4" placeholder="Requirements"></textarea>
+          <button type="submit" class="btn primary">Send</button>
+          <div class="form-note" id="formNote"></div>
+        </form>
+      </div>
+    </section>
   </main>
+
   <footer class="site-footer">
     <div class="container footer-wrap">
       <div class="footer-brand">
@@ -66,6 +160,7 @@
       <div class="copyright">© <span id="year"></span> KB Tech. All rights reserved.</div>
     </div>
   </footer>
+
   <script src="script.js"></script>
-  </body>
+</body>
 </html>
