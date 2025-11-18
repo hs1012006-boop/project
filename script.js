@@ -1,0 +1,4 @@
+const year = document.getElementById('year'); if (year) { year.textContent = new Date().getFullYear() }
+const toggle = document.querySelector('.nav-toggle'); const nav = document.getElementById('nav'); if (toggle && nav) { toggle.addEventListener('click', () => { nav.classList.toggle('open') }) }
+const form = document.getElementById('contactForm'); const note = document.getElementById('formNote'); if (form && note) { form.addEventListener('submit', (e) => { e.preventDefault(); note.textContent = 'Thank you. We will contact you shortly.'; form.reset() }) }
+const brandTiles = document.querySelectorAll('.brand-logo-tile'); const onIntersect = (entries) => { entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('animate') } }) }; if (brandTiles.length) { const obs = new IntersectionObserver(onIntersect, { root: null, threshold: .2 }); brandTiles.forEach((el, i) => { el.style.animationDelay = `${(i % 6) * .15}s`; obs.observe(el) }) }
